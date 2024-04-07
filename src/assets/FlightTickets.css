@@ -1,0 +1,32 @@
+/* FlightTickets.css */
+.flight-tickets {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .ticket-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .ticket-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .remove-button {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-button:hover {
+    background-color: #ff7875;
+  }
+  

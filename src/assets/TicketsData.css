@@ -1,0 +1,36 @@
+.purchase-history {
+    margin-top: 20px;
+}
+
+.purchase-history h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.purchase-item .payment-btn, .purchase-item .delete-btn {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.purchase-item .payment-btn:hover, .purchase-item .delete-btn:hover {
+    background-color: #45a049;
+}

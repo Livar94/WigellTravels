@@ -1,0 +1,17 @@
+/* styles.css */
+
+.purchase-history {
+    margin: 20px;
+  }
+  
+  .purchase-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+  }
+  
+  .purchase-item p {
+    margin: 5px 0;
+  }
+  
