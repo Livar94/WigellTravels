@@ -1,4 +1,4 @@
-// ProductEditForm.jsx
+
 import React, { useState } from 'react';
 
 function ProductEditForm({ product, onSave, onCancelEdit }) {

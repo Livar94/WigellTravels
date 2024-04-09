@@ -3,31 +3,25 @@ import '../../assets/orders.css';
 
 export default function Orders() {
   const [orderData, setOrderData] = useState({
-    // Definiera nödvändiga fält för beställningen här
     productName: '',
     quantity: 0,
-    // ...
   });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Implementera anrop till backend för att skicka beställningen
     try {
       const response = await fetch('/api/orders', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          // Lägg till eventuella autentiseringsheadrar om det behövs
         },
         body: JSON.stringify(orderData),
       });
       const data = await response.json();
       console.log('Beställning skickad:', data);
-      // Återställ formuläret efter att beställningen skickats
       setOrderData({
         productName: '',
         quantity: 0,
-        // ...
       });
     } catch (error) {
       console.error('Fel vid beställning:', error);
@@ -57,7 +51,6 @@ export default function Orders() {
             }
           }}
         />
-        {/* Lägg till fler formulärfält för beställningen */}
         <button className='btn-orders-1' type="submit">Submit Order</button>
       </form>
     </div>

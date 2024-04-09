@@ -1,4 +1,4 @@
-// CustomerEditForm.jsx
+
 import React, { useState } from 'react';
 
 function CustomerEditForm({ customer, onSave, onCancelEdit }) {

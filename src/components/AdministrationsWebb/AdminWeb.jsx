@@ -1,118 +1,7 @@
-// import React, { useState, useEffect } from 'react';
-// import CustomerManagement from './CustomerEditForm';
-// import ProductManagement from './ProductEditForm';
-
-// function AdminWeb() {
-//   const [customers, setCustomers] = useState([]);
-//   const [products, setProducts] = useState([]);
-
-//   useEffect(() => {
-//     // Funktion för att hämta kunder från backend
-//     async function fetchCustomersFromBackend() {
-//       try {
-//         const response = await fetch('/api/customers');
-//         if (!response.ok) {
-//           throw new Error('Något gick fel vid hämtning av kunder');
-//         }
-//         const fetchedCustomers = await response.json();
-//         setCustomers(fetchedCustomers);
-//       } catch (error) {
-//         console.error(error);
-//       }
-//     }
-
-//     // Funktion för att hämta produkter från backend
-//     async function fetchProductsFromBackend() {
-//       try {
-//         const response = await fetch('/api/products');
-//         if (!response.ok) {
-//           throw new Error('Något gick fel vid hämtning av produkter');
-//         }
-//         const fetchedProducts = await response.json();
-//         setProducts(fetchedProducts);
-//       } catch (error) {
-//         console.error(error);
-//       }
-//     }
-
-//     fetchCustomersFromBackend();
-//     fetchProductsFromBackend();
-//   }, []);
-
-//   // Funktion för att uppdatera kunder
-//   const updateCustomer = async (updatedCustomer) => {
-//     try {
-//       const response = await fetch(`/api/customers/${updatedCustomer.id}`, {
-//         method: 'PUT',
-//         headers: {
-//           'Content-Type': 'application/json',
-//         },
-//         body: JSON.stringify(updatedCustomer),
-//       });
-//       if (!response.ok) {
-//         throw new Error('Något gick fel vid uppdatering av kund');
-//       }
-//       // Uppdatera den lokala kundlistan
-//       const updatedCustomers = customers.map(customer =>
-//         customer.id === updatedCustomer.id ? updatedCustomer : customer
-//       );
-//       setCustomers(updatedCustomers);
-//     } catch (error) {
-//       console.error(error);
-//     }
-//   };
-
-//   // Funktion för att uppdatera produkter
-//   const updateProduct = async (updatedProduct) => {
-//     try {
-//       const response = await fetch(`/api/products/${updatedProduct.id}`, {
-//         method: 'PUT',
-//         headers: {
-//           'Content-Type': 'application/json',
-//         },
-//         body: JSON.stringify(updatedProduct),
-//       });
-//       if (!response.ok) {
-//         throw new Error('Något gick fel vid uppdatering av produkt');
-//       }
-//       // Uppdatera den lokala produktlistan
-//       const updatedProducts = products.map(product =>
-//         product.id === updatedProduct.id ? updatedProduct : product
-//       );
-//       setProducts(updatedProducts);
-//     } catch (error) {
-//       console.error(error);
-//     }
-//   };
-
-//   return (
-//     <div>
-//       <h1>Administration</h1>
-//       <div>
-//         <h2>Kunder</h2>
-//         <CustomerManagement customers={customers} onUpdate={updateCustomer} />
-//       </div>
-//       <div>
-//         <h2>Produkter/Tjänster</h2>
-//         <ProductManagement products={products} onUpdate={updateProduct} />
-//       </div>
-      
-//     </div>
-//   );
-// }
-
-// export default AdminWeb;
 import React, { useState } from 'react';
 import UpdateTicketsList from '../Tickets/UpdateTicketsList'
 
 function AdminWeb() {
-//   const [tickets, setTickets] = useState([
-//     { id: 1, name: 'Ticket 1', description: 'Tokyo', price: 8020 },
-//     { id: 2, name: 'Ticket 2', description: 'Sydney', price: 720 },
-//     { id: 3, name: 'Ticket 3', description: 'Toronto', price: 730 },
-//     { id: 4, name: 'Ticket 4', description: 'Stockholm', price: 990 },
-
-// ]);
   const [products, setProducts] = useState([
     {
       id: 1,
@@ -223,6 +112,4 @@ function AdminWeb() {
     </div>
   );
 }
-
 export default AdminWeb;
-

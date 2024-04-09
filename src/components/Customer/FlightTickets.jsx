@@ -1,4 +1,3 @@
-// FlightTickets.js
 import React, { useState } from 'react';
 import '../../assets/FlightTickets.css';
 
